@@ -1,0 +1,28 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 30px;
+}
+
+.dynamic-layout-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+.dynamic-layout-container .dynamic-layout-box {
+    height: 300px;
+    flex: 1 1 auto;
+}
+
+.dynamic-layout-container .dynamic-layout-box img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
